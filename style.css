@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
 
 .container{
     /* max-width: 1200px; */
@@ -16,43 +20,51 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 .logo{
-    font-size: 48px;
-    font-weight: 900;
-    color:#f9faf8;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#3b82f6;
+    letter-spacing: 1px;
 }
 
 .nav-links{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+
     
 }
 
 .nav-links a{
     text-decoration: none;
-    color: white;
-    font-weight: 900;
+    color:#e5e7eb;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+
     
 }
 
+.nav-links a:hover{
+    color: #3b82f6;
+}
 
 
 .hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
-    gap: 80px;
+    padding: 80px 0;
+    gap: 100px;
     
     
 }
 
 .hero-text{
-    max-width: 60%;
+    max-width: 50%;
     flex: 1;
 }
 
@@ -63,27 +75,43 @@
     color: #f9faf8;
 }
 
+.hero-text h1 span{
+    color: #3b82f6;
+}
+
 .hero-text p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #f9faf8;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    color: #d1d5db;
+    line-height: 1.6;
 }
 
 
 .hero-text button{
-    background-color: #3882f6;
+    background-color: #3b82f6;
     color: #f9faf8;
-    padding: 12px 24px;
+    padding: 14px 32px;
     border: none;
-    border-radius: 6px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 1.05rem;
     cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.3s ease;
+
+
+}
+
+.hero-text button:hover{
+    background-color: #2563eb;
+    transform: translateY(-2px);
 
 }
 
 .hero img{
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+
 }
 
 .hero-img{
